@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c8b6ff, #e7c6ff, #f3d1ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: #3a2e5c;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 15px;
+  background: rgba(255,255,255,0.6);
+  font-size: 14px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #b388eb;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #9d6ee6;
+  transform: scale(1.05);
+}
+
+#weatherResult {
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card {
+  background: rgba(255,255,255,0.4);
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
