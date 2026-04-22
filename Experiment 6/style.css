@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #eaf4ff 0%, #f7fbff 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #2b2b2b;
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #4a90e2, #6fb1fc);
+  color: white;
+  padding: 70px 25px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 35px;
+  box-shadow: 0 10px 25px rgba(74, 144, 226, 0.25);
+}
+
+.hero h1 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.hero p {
+  opacity: 0.95;
+}
+
+/* Blog Cards */
+.blog-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.35s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+  height: 210px;
+  object-fit: cover;
+}
+
+/* Card text spacing */
+.card-body {
+  padding: 22px;
+}
+
+.card-body h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #4a90e2;
+  border: none;
+  border-radius: 30px;
+  padding: 9px 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #2f75c7;
+  transform: scale(1.03);
+}
+
+/* Sections (About, Contact, Articles) */
+section {
+  margin-top: 60px;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+section h2 {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #1f3b57;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+footer {
+  background: #17212b;
+  color: #b8c2cc;
+  padding: 30px 0;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* Inputs */
+input, textarea {
+  border-radius: 10px !important;
+  border: 1px solid #dce6f3 !important;
+  padding: 10px !important;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(74,144,226,0.15) !important;
+  border-color: #4a90e2 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 18px;
+  }
+
+  .blog-card img {
+    height: 160px;
+  }
+
+  section {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+}
